@@ -25,3 +25,6 @@ playwright-report/
 
 # Coverage reports
 coverage/
+
+*.html
+html-report/data

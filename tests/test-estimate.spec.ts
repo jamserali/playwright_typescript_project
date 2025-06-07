@@ -8,3 +8,9 @@ test("estimate test", async({webApp})=>{
       // const companyTitle = await estimatePage.verifyCompanyTitle();
       // expect(companyTitle).toBe("Acme Co.");
 })
+test("estimate test2", async({webApp})=>{
+  const estimatePage = new EstimatePage(webApp);
+      await estimatePage.addNewEstimate(TEST_DATA.description, TEST_DATA.rate, TEST_DATA.quantity);
+      // const companyTitle = await estimatePage.verifyCompanyTitle();
+      // expect(companyTitle).toBe("Acme Co.");
+})

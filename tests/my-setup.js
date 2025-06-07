@@ -20,4 +20,6 @@ webApp:async ({page},use)=>{
       expect(errorMessage).toBe(data["expected_error"]);
     }
     await use (page)
+    console.log(`Test completed for ${login_type}`);
+    await page.context().clearCookies();
 }}})
